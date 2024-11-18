@@ -1,0 +1,27 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "cSpell.enableFiletypes": [
+        "bibtex",
+        "bibtex-style",
+        "code-referencing",
+        "code-runner-output",
+        "code-text-binary",
+        "dockercompose",
+        "dockerfile",
+        "doctex",
+        "edge",
+        "ipython",
+        "jsonl",
+        "latex_workshop_log",
+        "markdown-math",
+        "markdown_latex_combined",
+        "pip-requirements",
+        "powershell",
+        "properties",
+        "r",
+        "shellscript",
+        "snippets",
+        "tex",
+        "xml"
+    ]
+}
