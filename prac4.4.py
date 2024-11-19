@@ -1,17 +1,16 @@
-# Shape Area Calculator
-from turtle import circle
-
-
-class Shape:
-    def area(self):
-        pass
-
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
+# Encapsulation-Data Hiding
+class BankAccount:
+    def __init__(self, owner, balance=0):
+        #self.owner = owner
+        self.__balance = balance
         
-    def area(self):
-        return 3.14 * self.radius ** 2
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+        
+    def get_balance(self):
+        return self.__balance
 
-circle = Circle(5)
-print(f"Circle Area: {circle.area()}")
+account = BankAccount("Alice", 100)
+account.deposit(50)
+print(account.get_balance()) # Outputs: 150
